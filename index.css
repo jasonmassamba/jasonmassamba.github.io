@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#08111f;
+  --bg-2:#0c1a2e;
+  --surface:#10233c;
+  --surface-2:#132c48;
+  --line:rgba(148,197,255,.18);
+  --text:#edf5ff;
+  --muted:#a9bccf;
+  --muted-2:#7f95ab;
+  --blue:#2f8bff;
+  --blue-2:#6cb2ff;
+  --green:#1fcf8b;
+  --green-2:#a8f0d0;
+  --amber:#ffc85c;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#eef4fb;
+    --bg-2:#ffffff;
+    --surface:#ffffff;
+    --surface-2:#eaf2fb;
+    --line:rgba(15,62,115,.14);
+    --text:#0b1c30;
+    --muted:#465d75;
+    --muted-2:#687e97;
+    --blue:#1665d8;
+    --blue-2:#2f8bff;
+    --green:#07976a;
+    --green-2:#cdeedd;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Manrope',system-ui,-apple-system,Segoe UI,sans-serif}
+.font-display{font-family:'Space Grotesk','Manrope',system-ui,sans-serif}
+::selection{background:var(--green);color:#06121f}
+a{color:inherit}
+input,textarea{font:inherit}
